@@ -1,0 +1,20 @@
+---
+const { site } = Astro.props;
+---
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <h2>{site.services.title}</h2>
+      <span class="muted">{site.services.subtitle}</span>
+    </div>
+    <div class="grid" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+      {site.services.items.map((s) => (
+        <div class="card"><h3>{s.title}</h3><p>{s.desc}</p></div>
+      ))}
+    </div>
+  </div>
+  <style>
+    @media (max-width: 1000px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
+    @media (max-width: 600px) { .grid { grid-template-columns: 1fr !important; } }
+  </style>
+</section>

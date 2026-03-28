@@ -1,0 +1,11 @@
+---
+const { site } = Astro.props;
+---
+{site.contact?.whatsapp?.url ? (
+  <div class="fab" aria-label="WhatsApp quick contact">
+    <a href={site.contact.whatsapp.url} target="_blank" rel="noreferrer">
+      <span aria-hidden="true">💬</span>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+) : null}

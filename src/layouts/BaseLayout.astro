@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+const { title, description, siteUrl, image } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#CBF2D3" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    {siteUrl ? <meta property="og:url" content={siteUrl} /> : null}
+    {image ? <meta property="og:image" content={image} /> : null}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

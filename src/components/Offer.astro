@@ -1,0 +1,25 @@
+---
+const { site } = Astro.props;
+---
+<section id="offer" class="offer">
+  <div class="container two-col">
+    <div>
+      <span class="pill">{site.offer.eyebrow}</span>
+      <h2 style="margin-top:12px;">{site.offer.title}</h2>
+      <p>{site.offer.note}</p>
+      <div class="hero-actions">
+        <a class="btn primary" href={site.contact.whatsapp.url} target="_blank" rel="noreferrer">WhatsApp to book</a>
+        <a class="btn" href={`mailto:${site.contact.email}?subject=EmpowerHer%20Booking%20Request`}>Email to book</a>
+        {site.contact.enquiryForm?.url ? (
+          <a class="btn" href={site.contact.enquiryForm.url} target="_blank" rel="noreferrer">Enquiry form</a>
+        ) : null}
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="margin-bottom:10px;">Included</h3>
+      <ul class="checklist" style="margin-top:0;">
+        {site.offer.details.map((d) => (<li><span class="check" aria-hidden="true">✓</span><span>{d}</span></li>))}
+      </ul>
+    </div>
+  </div>
+</section>

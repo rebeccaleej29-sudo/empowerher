@@ -1,0 +1,31 @@
+---
+const { site } = Astro.props;
+---
+<section class="hero">
+  <div class="container hero-wrap">
+    <div class="hero-panel">
+      <span class="pill">{site.brand.subtagline}</span>
+      <h1 style="margin-top:12px;">{site.hero.headline}</h1>
+      <p style="font-size:1.05rem; max-width: 58ch;">{site.hero.subheadline}</p>
+      <div class="hero-actions">
+        <a class="btn primary" href={site.hero.primaryCta.href} target="_blank" rel="noreferrer">{site.hero.primaryCta.label}</a>
+        <a class="btn" href={site.hero.secondaryCta.href}>{site.hero.secondaryCta.label}</a>
+        {site.contact?.enquiryForm?.url ? (
+          <a class="btn" href={site.contact.enquiryForm.url} target="_blank" rel="noreferrer">Enquiry form</a>
+        ) : null}
+      </div>
+      {site.contact?.enquiryForm?.url ? (
+        <p class="muted" style="margin-top:10px;">Not ready to chat? <a href={site.contact.enquiryForm.url} target="_blank" rel="noreferrer">Send an enquiry instead</a>.</p>
+      ) : null}
+      <ul class="checklist">
+        {site.hero.highlights.map((h) => (
+          <li><span class="check" aria-hidden="true">✓</span><span>{h}</span></li>
+        ))}
+      </ul>
+      <p class="muted" style="margin-top:14px; font-weight:600;">{site.brand.tagline}</p>
+    </div>
+    <div class="hero-img" aria-label={site.hero.heroImageAlt}>
+      <img src={site.hero.heroImage} alt={site.hero.heroImageAlt} loading="eager" />
+    </div>
+  </div>
+</section>

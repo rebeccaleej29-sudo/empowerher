@@ -1,0 +1,20 @@
+---
+const { site } = Astro.props;
+---
+<section id="about">
+  <div class="container two-col">
+    <div>
+      <div class="section-head"><h2>{site.about.title}</h2></div>
+      {site.about.paragraphs.map((p) => (<p>{p}</p>))}
+    </div>
+    <div class="card">
+      <h3 style="margin-bottom:10px;">What we focus on</h3>
+      <ul class="checklist" style="margin-top:0;">
+        {site.about.bullets.map((b) => (<li><span class="check" aria-hidden="true">✓</span><span>{b}</span></li>))}
+      </ul>
+      <div class="hero-actions" style="margin-top:14px;">
+        <a class="btn" href="/about-natasha/">About Natasha</a>
+      </div>
+    </div>
+  </div>
+</section>

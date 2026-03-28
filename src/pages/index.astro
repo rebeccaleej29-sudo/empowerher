@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import WhoYouHelp from '../components/WhoYouHelp.astro';
+import Approach from '../components/Approach.astro';
+import Services from '../components/Services.astro';
+import Offer from '../components/Offer.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFab from '../components/WhatsAppFab.astro';
+import site from '../data/site.json';
+
+const title = site.seo?.title ?? `${site.brand.name} | ${site.brand.subtagline}`;
+const description = site.seo?.description ?? 'Women’s health & wellness coaching.';
+const siteUrl = site.seo?.url ?? '';
+const image = site.seo?.image ?? '';
+---
+<BaseLayout title={title} description={description} siteUrl={siteUrl} image={image}>
+  <Header site={site} />
+  <main>
+    <Hero site={site} />
+    <About site={site} />
+    <WhoYouHelp site={site} />
+    <Approach site={site} />
+    <Services site={site} />
+    <Offer site={site} />
+    <Contact site={site} />
+  </main>
+  <Footer site={site} />
+  <WhatsAppFab site={site} />
+</BaseLayout>

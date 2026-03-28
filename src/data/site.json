@@ -1,0 +1,205 @@
+{
+  "brand": {
+    "name": "EmpowerHer Studio",
+    "tagline": "Strong Women, Strong Lives",
+    "subtagline": "Women’s Health & Wellness Coaching",
+    "logo": "/uploads/logo.png"
+  },
+  "seo": {
+    "title": "EmpowerHer Studio | Women’s Health & Wellness Coaching",
+    "description": "Evidence-informed women’s health and wellness coaching with a focus on strength training, sustainable fat loss, and lifestyle support.",
+    "url": "https://empowerher.netlify.app",
+    "image": "/uploads/og.jpg"
+  },
+  "theme": {
+    "accent": "#CBF2D3",
+    "accentHover": "#B8EBC7",
+    "text": "#2F2F2F",
+    "mutedText": "#4A4A4A",
+    "bg": "#F7F9F8",
+    "card": "#FFFFFF",
+    "border": "#D0D4D2"
+  },
+  "nav": [
+    {
+      "label": "About",
+      "href": "/#about"
+    },
+    {
+      "label": "Who You Help",
+      "href": "/#who"
+    },
+    {
+      "label": "Approach",
+      "href": "/#approach"
+    },
+    {
+      "label": "Services",
+      "href": "/#services"
+    },
+    {
+      "label": "Offer",
+      "href": "/#offer"
+    },
+    {
+      "label": "About Natasha",
+      "href": "/about-natasha/"
+    },
+    {
+      "label": "Contact",
+      "href": "/#contact"
+    }
+  ],
+  "hero": {
+    "headline": "Strength training for women who want to feel stronger — not smaller.",
+    "subheadline": "Evidence‑informed coaching and strength-focused programming designed for women who want sustainable results — with support, structure, and a plan that fits real life.",
+    "primaryCta": {
+      "label": "WhatsApp to book",
+      "href": "https://wa.me/27833007334?text=Hi%20Natasha%2C%20I%20would%20like%20to%20book%20a%20consultation.%20Please%20can%20you%20share%20your%20next%20available%20times%3F"
+    },
+    "secondaryCta": {
+      "label": "Email to book",
+      "href": "mailto:wiredforwondersa@gmail.com?subject=EmpowerHer%20Booking%20Request"
+    },
+    "highlights": [
+      "Strength training support for women’s health and longevity",
+      "Hormone health, osteoporosis support, and healthy ageing",
+      "Sustainable fat loss and confidence-building coaching"
+    ],
+    "heroImage": "/uploads/hero.jpg",
+    "heroImageAlt": "EmpowerHer Studio coaching and training"
+  },
+  "about": {
+    "title": "A safe, supportive space — with a practical plan",
+    "paragraphs": [
+      "EmpowerHer Studio is a women’s health and wellness coaching studio focused on helping you build strength, confidence, and self‑trust through evidence‑informed training.",
+      "We’re here to help you stop shrinking yourself — and start building a body that supports you through every stage of life."
+    ],
+    "bullets": [
+      "Strength training for long-term health and resilience",
+      "Support for hormonal change, chronic pain, and osteoporosis risk",
+      "Simple, sustainable habits — starting with just 5 minutes"
+    ]
+  },
+  "sections": {
+    "whoYouHelp": {
+      "title": "This space is for you if…",
+      "items": [
+        "You feel weak, tired, or overwhelmed",
+        "You’ve been told your symptoms are “normal”",
+        "You’re navigating menopause, postpartum, or chronic pain",
+        "You’re scared of getting injured or don’t know where to start",
+        "You want to feel strong again"
+      ]
+    },
+    "approach": {
+      "title": "Your approach",
+      "items": [
+        "Small groups (max 5 women)",
+        "No mirrors — coaching focused",
+        "Evidence-based training",
+        "Safe for osteoporosis and beginners",
+        "Personalised attention"
+      ]
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Start with coaching and grow into training support that fits your goals.",
+    "items": [
+      {
+        "title": "Hormone Balance & Healthy Ageing Support",
+        "desc": "Lifestyle and training guidance to support hormone-related symptoms, bone health, and long-term wellbeing."
+      },
+      {
+        "title": "Sustainable Fat Loss + Strength Building",
+        "desc": "A structured approach that prioritises consistency, progressive strength training, and sustainable nutrition habits."
+      },
+      {
+        "title": "Science‑Backed Lifestyle Strategies",
+        "desc": "Practical strategies to support energy, mood, recovery, and quality of life."
+      },
+      {
+        "title": "Personal 1:1 Training",
+        "desc": "One‑on‑one training sessions tailored to your body, your stage of life, and your goals."
+      }
+    ]
+  },
+  "offer": {
+    "eyebrow": "Special introductory price",
+    "title": "R1200 per month for the first 3 months",
+    "details": [
+      "2 × 60‑minute consultations",
+      "Strength training programme",
+      "Evidence‑informed coaching and accountability"
+    ],
+    "note": "Not ready to chat? You can also send an enquiry form."
+  },
+  "contact": {
+    "title": "Book a consultation",
+    "subtitle": "Contact via WhatsApp, email, or the enquiry form — whichever is easiest for you.",
+    "phone": "+27 83 300 7334",
+    "whatsapp": {
+      "label": "WhatsApp",
+      "url": "https://wa.me/27833007334?text=Hi%20Natasha%2C%20I%20would%20like%20to%20book%20a%20consultation.%20Please%20can%20you%20share%20your%20next%20available%20times%3F",
+      "number": "+27 83 300 7334"
+    },
+    "email": "wiredforwondersa@gmail.com",
+    "enquiryForm": {
+      "label": "Enquiry form",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSf9XWS8TsxNkaJK3Q-_Il_lhfyOpAb3ptpLwE5SAZ0pD-e4mQ/viewform"
+    },
+    "instagram": {
+      "handle": "@tasheslb",
+      "url": "https://instagram.com/tasheslb"
+    },
+    "form": {
+      "enabled": true,
+      "netlifyFormName": "contact",
+      "successMessage": "Thanks — your message has been sent. We’ll reply soon."
+    }
+  },
+  "natasha": {
+    "name": "Natasha Shaw",
+    "headline": "Biokineticist and founder of EmpowerHer Studio.",
+    "story": [
+      "Natasha is a qualified Biokineticist and the founder of EmpowerHer Studio — a space created for women who are ready to rebuild their strength, confidence, and trust in their bodies.",
+      "Her journey into women’s health was shaped not only through her studies and clinical experience, but through deeply personal experiences that changed the way she sees strength, health, and what it truly means to feel well.",
+      "Working with frail patients early in her career, and witnessing her own grandmother struggle with severe osteoporosis, Natasha made a quiet promise to herself: she would never allow her body to become fragile — and she would help other women do the same.",
+      "Over time, her focus shifted beyond aesthetics. She became passionate about helping women move away from the idea that they need to be smaller, and instead embrace the idea that they deserve to be stronger, more capable, and more resilient.",
+      "Her approach is rooted in simplicity and sustainability — often starting with one powerful question: “Can you give me just 5 minutes?” Because real change doesn’t start with perfection — it starts with small, consistent actions.",
+      "Natasha’s work is also deeply influenced by her own health journey. After years of being dismissed by medical professionals and told her pain was “in her head,” she was finally diagnosed with endometriosis in 2019. That moment — of being seen, heard, and validated — became a turning point.",
+      "Later, being diagnosed with ADHD at 35 helped her understand years of feeling “too much,” “too sensitive,” or “not enough.” These experiences shaped her mission even further:",
+      "To create a space where women are no longer dismissed. Where they are not told to shrink, to push through, or to accept discomfort as normal. Where they are seen, heard, and supported.",
+      "At EmpowerHer Studio, Natasha works with women across all stages of life — from postpartum to menopause — helping them build strength safely and confidently, especially those at risk of or living with osteoporosis, chronic pain, or hormonal changes.",
+      "Her philosophy is simple: You are not broken. Your body is not the problem. You are capable of so much more than you’ve been led to believe."
+    ],
+    "shortBio": "Natasha is a Biokineticist and founder of EmpowerHer Studio, helping women build strength, confidence, and resilience at every stage of life. With a special focus on osteoporosis, hormonal health, and sustainable strength training, she is passionate about shifting women away from the pressure to be smaller — and towards becoming stronger, more capable, and empowered in their own bodies. Her work is deeply personal, shaped by her own journey with endometriosis and ADHD, and driven by a mission to create a space where women feel truly seen, heard, and supported.",
+    "taglines": [
+      "Strong looks different here.",
+      "You are stronger than you feel, and more capable than you know.",
+      "A space for women to rebuild strength, confidence, and self-trust."
+    ],
+    "cta": {
+      "label": "Book with Natasha",
+      "href": "https://wa.me/27833007334?text=Hi%20Natasha%2C%20I%20would%20like%20to%20book%20a%20consultation.%20Please%20can%20you%20share%20your%20next%20available%20times%3F"
+    }
+  },
+  "footer": {
+    "smallprint": "© {year} EmpowerHer Studio. All rights reserved.",
+    "links": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com/tasheslb"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:wiredforwondersa@gmail.com"
+      },
+      {
+        "label": "Enquiry form",
+        "href": "https://docs.google.com/forms/d/e/1FAIpQLSf9XWS8TsxNkaJK3Q-_Il_lhfyOpAb3ptpLwE5SAZ0pD-e4mQ/viewform"
+      }
+    ]
+  }
+}

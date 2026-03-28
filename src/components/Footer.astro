@@ -1,0 +1,15 @@
+---
+const { site } = Astro.props;
+const year = new Date().getFullYear();
+const smallprint = (site.footer.smallprint || '').replace('{year}', String(year));
+---
+<footer>
+  <div class="container footer-inner">
+    <div>{smallprint}</div>
+    <div style="display:flex; gap: 14px; flex-wrap: wrap;">
+      {site.footer.links?.map((l) => (
+        <a href={l.href} target="_blank" rel="noreferrer">{l.label}</a>
+      ))}
+    </div>
+  </div>
+</footer>

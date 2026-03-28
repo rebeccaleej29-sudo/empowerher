@@ -1,0 +1,16 @@
+---
+const { site } = Astro.props;
+---
+<section id="who">
+  <div class="container">
+    <div class="section-head">
+      <h2>{site.sections.whoYouHelp.title}</h2>
+      <span class="muted">This space is for you if you want to feel stronger again</span>
+    </div>
+    <div class="card">
+      <ul class="checklist" style="margin-top:0;">
+        {site.sections.whoYouHelp.items.map((i) => (<li><span class="check" aria-hidden="true">✓</span><span>{i}</span></li>))}
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site.json';
+const title = 'Thanks | ' + (site.brand?.name ?? 'EmpowerHer');
+---
+<BaseLayout title={title} description="Message sent" siteUrl={site.seo?.url} image={site.seo?.image}>
+  <div class="container" style="padding: 80px 0;">
+    <span class="pill">Message sent</span>
+    <h1 style="margin-top: 12px;">Thanks — we’ll reply soon.</h1>
+    <p>If you don’t hear back within 1–2 business days, feel free to WhatsApp, email, or send an enquiry form.</p>
+    <div class="hero-actions" style="margin-top: 18px;">
+      <a class="btn primary" href="/">Back to home</a>
+      <a class="btn" href={site.contact.whatsapp.url} target="_blank" rel="noreferrer">WhatsApp</a>
+      <a class="btn" href={`mailto:${site.contact.email}?subject=EmpowerHer%20Booking%20Request`}>Email</a>
+      <a class="btn" href={site.contact.enquiryForm.url} target="_blank" rel="noreferrer">Enquiry form</a>
+    </div>
+  </div>
+</BaseLayout>

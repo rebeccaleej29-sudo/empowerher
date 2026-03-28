@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFab from '../components/WhatsAppFab.astro';
+import site from '../data/site.json';
+
+const title = `About Natasha | ${site.brand.name}`;
+const description = 'Learn more about Natasha Shaw and the EmpowerHer Studio approach.';
+---
+<BaseLayout title={title} description={description} siteUrl={site.seo?.url} image={site.seo?.image}>
+  <Header site={site} />
+  <main>
+    <section>
+      <div class="container two-col">
+        <div>
+          <span class="pill">About</span>
+          <h1 style="margin-top:12px;">{site.natasha.name}</h1>
+          <p style="font-size:1.05rem; max-width: 62ch;">{site.natasha.shortBio}</p>
+          {site.natasha.story.map((para) => (<p>{para}</p>))}
+          <div class="hero-actions" style="margin-top:18px;">
+            <a class="btn primary" href={site.natasha.cta.href} target="_blank" rel="noreferrer">{site.natasha.cta.label}</a>
+            <a class="btn" href={site.contact.enquiryForm.url} target="_blank" rel="noreferrer">Enquiry form</a>
+            <a class="btn" href="/#services">View services</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Tagline ideas</h3>
+          <ul class="checklist" style="margin-top:0;">
+            {site.natasha.taglines.map((t) => (<li><span class="check" aria-hidden="true">✓</span><span>{t}</span></li>))}
+          </ul>
+          <h3 style="margin-top:14px;">Quick links</h3>
+          <p><a href="/#offer">Intro offer</a></p>
+          <p><a href="/#contact">Contact</a></p>
+          <p><a href={site.contact.instagram.url} target="_blank" rel="noreferrer">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer site={site} />
+  <WhatsAppFab site={site} />
+</BaseLayout>
